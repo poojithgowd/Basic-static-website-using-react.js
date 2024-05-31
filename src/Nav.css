@@ -1,0 +1,17 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Space between the image and the links */
+     /* Center align items vertically */
+    padding: 10px; /* Optional: Add some padding around the container */
+}
+
+.nav-links {
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-link {
+    padding: 30px;
+    text-decoration: none; /* Remove underline */
+    color: black; /* Optional: Set link color */
+}
