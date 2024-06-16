@@ -11,10 +11,7 @@ const Login=({addToCart})=>{
                          <Cards title={e.title} image={e.image} price={e.price} addToCart={()=>addToCart(e)}/>
                     </div>
                  )
-            })}
-         
-        
-            
+            })}           
         </div>
     )
 }

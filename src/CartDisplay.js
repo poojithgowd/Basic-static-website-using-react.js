@@ -1,9 +1,15 @@
 import React from 'react'
 
 const CartDisplay = ({cart}) => {
-    function removeCart(){ }
-    function incHandler(){}
-    function decHandler(){}
+    function removeCart(item){
+
+    }
+    function incHandler(item){
+  
+    }
+    function decHandler(item,id){
+      // cart.filter(item.id !== index)
+    }
   return (
     <div>
         <h2>Cart</h2>
@@ -22,6 +28,7 @@ const CartDisplay = ({cart}) => {
                     <br/>
                     <button ><h4>Buy now</h4></button>
                     <button onClick={removeCart}><h4>Del cart</h4></button></div>
+                    
             </li>
           ))}
         </ul>

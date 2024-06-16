@@ -17,14 +17,14 @@ const App=()=>{
   return(
     <div >
       <BrowserRouter>
-      <Nav/>
+      <Nav cart={cart}/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
-        <Route path="/login" element={<Login addToCart={addToCart}/>}/>
+        <Route path="/login" element={<Login addToCart={addToCart}/>}/>       
+      <Route path="/cart" element={<CartDisplay cart={cart}/>}/>
       </Routes>
-      <CartDisplay cart={cart} />
       </BrowserRouter>  
     </div>
   )
